@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funngrow - Helping You Grow Your Business</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #052230; /* Dark purple background color */
+            color: #ffffff; /* White text color */
+        }
+        header {
+            background-color: #052230; /* Dark purple header background color */
+            padding: 90px 60px; /* Increased header padding */
+            text-align: center;
+            position: relative; /* Add position relative */
+        }
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+        .logo {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 200px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px; /* Increased font size for navigation links */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff; /* White link color */
+            transition: color 0.3s ease; /* Smooth transition */
+        }
+        nav ul li a:hover {
+            color: #33c167; /* Light purple color on hover */
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+            background-color: #052230; /* Dark purple background color */
+            margin-bottom: 20px;
+        }
+        section h2 {
+            margin-bottom: 20px;
+            color: #cbdfd2; /* Light purple color */
+        }
+        section p {
+            margin-bottom: 20px;
+        }
+        section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        section ul li {
+            margin-bottom: 10px;
+        }
+        section ul li:before {
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .category-box {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            background-color: #061922; /* Dark purple background color */
+            color: #a7d2d6; /* White text color */
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.5s; /* Smooth transition for hover effect */
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            position: relative; /* Add position relative */
+        }
+        .category-box:hover {
+            transform: rotateY(180deg); /* Flip animation on hover */
+        }
+        .category-front,
+        .category-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+        .category-back {
+            transform: rotateY(180deg); /* Initially hide back side */
+            background-color: #145422;
+        }
+        .category-front p {
+            margin: 0;
+            padding: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .category-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        footer {
+            background-color: #032931c5; /* Dark purple footer background color */
+            padding: 50px;
+            text-align: center;
+            position: bottom;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img1.png" alt="Funngrow Logo" class="logo"> <!-- Replace with your logo image -->
+    </header>
+    <h1>Welcome to Funngro</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Project Categories</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Funngrow is dedicated to helping businesses thrive in the digital age. Our team of experts specializes in providing tailored solutions to elevate your online presence and increase your brand visibility.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Digital Marketing</li>
+            <li>Web Development</li>
+            <li>Social Media Management</li>
+            <li>Content Creation</li>
+        </ul>
+    </section>
+
+    <section id="work">
+        <h2>Project Categories</h2>
+        <div class="category-box">
+            <div class="category-front">
+                <p>Social Media Marketing</p>
+            </div>
+            <div class="category-back">
+                <div class="category-content">
+                    <h3>Social Media Marketing</h3>
+                    <p>Effective social media strategies to boost your online presence.</p>
+                </div>
+            </div>
+        </div>
+        <div class="category-box">
+            <div class="category-front">
+                <p>Video Creation</p>
+            </div>
+            <div class="category-back">
+                <div class="category-content">
+                    <h3>Video Creation</h3>
+                    <p>Engaging video content tailored to your brand.</p>
+                </div>
+            </div>
+        </div>
+        <div class="category-box">
+            <div class="category-front">
+                <p>Website Design</p>
+            </div>
+            <div class="category-back">
+                <div class="category-content">
+                    <h3>Website Design</h3>
+                    <p>Customized website designs to showcase your brand.</p>
+                </div>
+            </div>
+        </div>
+        <div class="category-box">
+            <div class="category-front">
+                <p>Influencer Marketing</p>
+            </div>
+            <div class="category-back">
+                <div class="category-content">
+                    <h3>Influencer Marketing</h3>
+                    <p>Collaborate with influential figures to reach your target audience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Reach out to us for any inquiries or collaborations!</p>
+        <ul>
+            <li>Email: info@funngrow.com</li>
+            <li>Phone: +1 (123) 456-7890</li>
+            <li>Address: 123 Main Street, City, Country</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FUNNGRO. All rights reserved.</p>
+    </footer>
+</body>
+</html>
